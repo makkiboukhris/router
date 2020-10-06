@@ -10,10 +10,8 @@ function App() {
     
       <Router>
     <div >
-      
       <Route path="/" exact component={Home} />
-      <Route path="/:id" component={Desc} />  
-      
+      <Route path="/:id" component={()=><Desc />} />  
     </div>    
       </Router>
     
